@@ -14,7 +14,7 @@ int main(void)
 	{
 		putchar(num);
 	}
-	for (num = 65; num < 91' num++)
+	for (num = 65; num < 91; num++)
 	{
 		putchar(num);
 	}
