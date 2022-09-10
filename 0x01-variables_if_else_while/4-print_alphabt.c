@@ -12,7 +12,7 @@ int main(void)
 
 	for (num = 97; num < 123; num++)
 	{
-		if (num !== 101 && num !== 113)
+		if (num != 101 && num != 113)
 			putchar(num);
 	}
 	putchar('\n');
