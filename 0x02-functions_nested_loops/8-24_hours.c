@@ -10,7 +10,7 @@ void jack_bauer(void)
 {
 	int min_count = 0;
 
-	while (min_count < 1441)
+	while (min_count < 1440)
 	{
 		int hours = min_count / 60;
 		int min = min_count % 60;
