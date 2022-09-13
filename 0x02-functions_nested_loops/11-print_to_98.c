@@ -10,12 +10,21 @@
 
 void print_to_98(int n)
 {
+	int dup = n;
+
 	do {
 		if (n != 98)
+		{
 			printf("%d, ", n);
+		}
 		else
+		{
 			printf("%d", n);
+			break;
+		}
 		n < 98 ? n++ : n--;
 	} while (n != 98);
+	if (dup != 98)
+		printf("98");
 	_putchar('\n');
 }
