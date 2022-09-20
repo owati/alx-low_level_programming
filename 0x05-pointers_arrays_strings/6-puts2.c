@@ -9,7 +9,7 @@
 
 void puts2(char *str)
 {
-	bool toogle = true;
+	bool toggle = true;
 
 	while (*str)
 	{
