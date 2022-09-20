@@ -15,10 +15,10 @@ void print_rev(char *s)
 
 	start = s;
 	end = s;
-	for (i = 0; i < l - 1; i++)
+	for (i = 0; i < len - 1; i++)
 		end++;
 
-	for (i = 0; i < l / 2; i++)
+	for (i = 0; i < len / 2; i++)
 	{
 		temp = *start;
 		*start = *end;
