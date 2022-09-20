@@ -18,4 +18,5 @@ void puts2(char *str)
 		str++;
 		toggle = !toggle;
 	}
+	_putchar('\n');
 }
