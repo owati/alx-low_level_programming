@@ -30,7 +30,7 @@ int _atoi(char *s)
 				positive = !positive;
 			continue;
 		}
-		hasSeenNumber ? hasSeenNumber : true;
+		hasSeenNumber = true;
 		num_equiv = letter - '0';
 		sum = sum * pow(10, count) + num_equiv;
 		count++;
