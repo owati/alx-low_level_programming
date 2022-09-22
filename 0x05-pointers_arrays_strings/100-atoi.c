@@ -1,6 +1,5 @@
 #include <string.h>
 #include <stdbool.h>
-#include <math.h>
 #include "main.h"
 
 /**
@@ -8,6 +7,7 @@
  * @s: the string
  * Return: the number
 */
+int pow(int a, int b);
 
 int _atoi(char *s)
 {
@@ -36,4 +36,19 @@ int _atoi(char *s)
 		count++;
 	}
 	return (positive ? sum : -1 * sum);
+}
+
+int pow(int a, int b)
+{
+	int temp = a;
+
+	if (a == 0)
+		return (0);
+	if (b == 0)
+		return (1);
+	while (b--)
+	{
+		a *= temp;
+	}
+	return (a);
 }
