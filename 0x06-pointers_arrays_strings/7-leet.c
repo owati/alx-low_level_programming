@@ -21,7 +21,7 @@ char *leet(char *str)
 		{
 			if (allowed[index] == temp)
 			{
-				*(s + i) = '0' + replace[index];
+				*(str + i) = '0' + replace[index];
 				break;
 			}
 		}
