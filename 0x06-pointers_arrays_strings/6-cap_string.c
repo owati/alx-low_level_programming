@@ -35,7 +35,7 @@ char *cap_string(char *str)
 
 		if (temp >= 'a' && temp <= 'z')
 		{
-			if (i == 0 || is_term(*(s + i - 1)))
+			if (i == 0 || is_term(*(str + i - 1)))
 				*(str + i) = temp - 32;
 		}
 	}
