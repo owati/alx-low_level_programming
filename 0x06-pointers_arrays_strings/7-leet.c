@@ -14,7 +14,7 @@ char *leet(char *str)
 
 	for (; *(str + i); i++)
 	{
-		char temp = *(s + i);
+		char temp = *(str + i);
 		int index = 0;
 
 		for (; allowed[index]; index++)
