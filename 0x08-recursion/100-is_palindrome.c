@@ -15,7 +15,7 @@ int check(char *s, int start, int size)
 	{
 		if (start >= size / 2)
 			return (1);
-		return (check(*s, start + 1, size));
+		return (check(s, start + 1, size));
 	}
 	else
 	{
