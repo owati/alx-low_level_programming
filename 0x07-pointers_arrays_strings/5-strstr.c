@@ -12,19 +12,25 @@
 char *_strstr(char *haystack, char *needle)
 {
 	bool streak = false;
-	char *tmp = needle;
+	unsigned int count = 0;
 
 	do {
-		if (*haystack == *needle)
+		if (*haystack == needle[count])
 		{
-			needle++;
+			streak = true;
+			count++;
+		}
+		else if (*haystack != needle[count] && needle[count])
+		{
+			streak = false;
+			count = 0;
 		}
 		else
 		{
-			if (streak && !*needle)
-				return (haystack - strlen(tmp));
-			streak = false;
+			return (haystack - count);
 		}
 	} while (*++haystack);
+	if (count > 0 && !needle[count])
+		return (haystack - count);
 	return (NULL);
 }
