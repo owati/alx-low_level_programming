@@ -1,5 +1,4 @@
 #include <stdio.h>
-#include <stdbool.h>
 #include "main.h"
 
 /**
@@ -11,24 +10,15 @@
 
 char *_strstr(char *haystack, char *needle)
 {
-	bool streak = false;
 	unsigned int count = 0;
 
 	do {
 		if (*haystack == needle[count])
-		{
-			streak = true;
 			count++;
-		}
 		else if (*haystack != needle[count] && needle[count])
-		{
-			streak = false;
 			count = 0;
-		}
 		else
-		{
 			return (haystack - count);
-		}
 	} while (*++haystack);
 	if (count > 0 && !needle[count])
 		return (haystack - count);
