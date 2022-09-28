@@ -14,7 +14,7 @@ int sqrt_check(int check, int num)
 	else if (check <= 1)
 		return (-1);
 	else
-		return (sqrt_check(check - 1, num));
+		return (sqrt_check((check + num / check) / 2, num));
 }
 
 /**
