@@ -18,7 +18,7 @@ int get_prime(int num, int start)
 	else if (start >= num / 2)
 		return (1);
 	else
-		return (num, start + 1);
+		return (get_prime(num, start + 1));
 }
 
 /**
