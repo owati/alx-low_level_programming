@@ -10,14 +10,14 @@
 
 int main(int argc, char *argv[])
 {
+	int i = 0;
+	int mult = 1;
+
 	if (argc == 1)
 	{
 		printf("Error\n");
 		return (0);
 	}
-	int i = 1;
-	int mult = 1;
-
 	for (; i < argc; i++)
 		mult *= atoi(argv[i]);
 	printf("%d\n", mult);
