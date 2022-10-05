@@ -35,7 +35,7 @@ int main(int argc, char *argv[])
 
 	for (; i < argc; i++)
 	{
-		if (!is_int(argv[i])
+		if (!is_int(argv[i]))
 		{
 			printf("Error\n");
 			return (1);
