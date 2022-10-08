@@ -35,6 +35,6 @@ int *array_range(int min, int max)
 	ptr = malloc((max -  min + 1) * sizeof(int));
 	if (ptr == NULL)
 		return (NULL);
-	populate(ptr);
+	populate(ptr, min, max);
 	return (ptr);
 }
