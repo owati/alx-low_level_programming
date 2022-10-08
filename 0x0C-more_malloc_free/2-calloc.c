@@ -2,6 +2,22 @@
 #include "main.h"
 
 /**
+ * settozero - initializes the array to zero
+ * @p: the pointer
+ * @n: the size
+ * Return: the pointer
+*/
+
+char *settozero(char *p, unsigned int n)
+{
+	unsigned int i;
+
+	for (i = 0; i < n; i++)
+		p[i] = 0;
+	return (p);
+}
+
+/**
  * _calloc - malloc with extra steps
  * @nmemb: the number
  * @size: the size
@@ -18,7 +34,6 @@ void *_calloc(unsigned int nmemb, unsigned int size)
 	ptr = malloc(nmemb * size);
 	if (ptr == NULL)
 		return (NULL);
-	for (i = 0; i < (nmemb * size); i += size)
-		ptr[i / size] = 0;
+	settozero(ptr, nmemb * size);
 	return (ptr);
 }
