@@ -1,3 +1,4 @@
+#include <stdio.h>
 #include "function_pointers.h"
 
 /**
@@ -21,7 +22,7 @@ int int_index(int *array, int size, int (*cmp)(int))
 			if (cmp(array[i]))
 				return (i);
 		}
-		return (-1)
+		return (-1);
 	}
 	return (-1);
 }
