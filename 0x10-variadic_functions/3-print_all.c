@@ -80,7 +80,7 @@ void print_all(const char * const format, ...)
 		if (j < 4)
 		{
 			printf("%s", sep);
-			func_map[j].print(ptr);
+			func_map[j].func(ptr);
 			sep = ", ";
 		}
 		i++;
