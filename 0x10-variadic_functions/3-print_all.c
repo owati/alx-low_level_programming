@@ -75,7 +75,7 @@ void print_all(const char * const format, ...)
 	while (format && format[i])
 	{
 		j = 0;
-		while (j < 4 && (format[i] != *(func_map[j].symbol)))
+		while (j < 4 && (format[i] != func_map[j].symbol))
 			j++;
 		if (j < 4)
 		{
