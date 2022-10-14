@@ -66,7 +66,7 @@ void print_all(const char * const format, ...)
 		{'i', &print_int},
 		{'f', &print_float},
 		{'s', &print_string}
-	}
+	};
 	int i = 0;
 	int j = 0;
 	char *sep = "";
@@ -75,7 +75,7 @@ void print_all(const char * const format, ...)
 	while (format && format[i])
 	{
 		j = 0;
-		while (j < 4 && (format[i] != *(func_map[j].format)))
+		while (j < 4 && (format[i] != *(func_map[j].symbol)))
 			j++;
 		if (j < 4)
 		{
